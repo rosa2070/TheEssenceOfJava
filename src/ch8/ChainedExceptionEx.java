@@ -56,17 +56,9 @@ class InstallException extends Exception {
     }
 }
 
-class SpaceException extends Exception {
-    SpaceException(String msg){
-        super(msg);
-    }
-}
 
-class MemoryException extends Exception {
-    MemoryException(String msg) {
-        super(msg);
-    }
-}
+
+
 
 
 
