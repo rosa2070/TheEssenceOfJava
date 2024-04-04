@@ -1,4 +1,4 @@
-package ch7.quiz;
+package ch7.quiz.quiz1;
 
 public class SutdaCard {
     int num;
@@ -14,6 +14,6 @@ public class SutdaCard {
     }
 
     public String toString() {
-        return num + (isKwang ? "K":"");
+        return num + (isKwang? "K":"");
     }
 }
