@@ -1,4 +1,4 @@
-package ch7.quiz.quiz1;
+package ch7.quiz;
 
 public class Exercise7_1 {
     public static void main(String[] args) {

@@ -1,19 +1,19 @@
-package ch7.quiz.quiz1;
+package ch7.quiz;
 
 public class SutdaCard {
-    int num;
-    boolean isKwang;
+    final int NUM;
+    final boolean IS_KWANG;
 
     SutdaCard() {
         this(1, true);
     }
 
     SutdaCard(int num, boolean isKwang) {
-        this.num = num;
-        this.isKwang = isKwang;
+        this.NUM = num;
+        this.IS_KWANG = isKwang;
     }
 
     public String toString() {
-        return num + (isKwang? "K":"");
+        return NUM + (IS_KWANG? "K":"");
     }
 }
