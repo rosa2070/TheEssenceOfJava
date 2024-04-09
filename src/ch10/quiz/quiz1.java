@@ -6,14 +6,22 @@ import java.util.Date;
 
 public class quiz1 {
     public static void main(String[] args) {
-        for (int month=1; month<=12; month++) {
-            Calendar sDay = Calendar.getInstance();
-            Calendar eDay = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance();
 
+        cal.set(2010, 0, 1);
 
-            sDay.set(2010, month-1, 1);
-            eDay.set(2010, month-1, sDay.getActualMaximum(Calendar.DATE));
+        for (int i=0; i<12; i++) {
+            int weekday = cal.get(Calendar.DAY_OF_WEEK);
 
+            int secondSunday = (weekday == 1) ? 8:16-weekday;
+
+            cal.set(Calendar.DAY_OF_MONTH, secondSunday);
+
+            Date d = cal.getTime();
+            System.out.println(new SimpleDateFormat("yyyy-MM-dd은 F번째 E요일입니다.").format(d));
+
+            cal.add(Calendar.MONTH, 1);
+            cal.set(Calendar.DAY_OF_MONTH, 1);
         }
 
 
